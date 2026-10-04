@@ -1,0 +1,24 @@
+{
+  "name": "ecostream-3d",
+  "private": true,
+  "version": "0.1.0",
+  "description": "EcoStream 3D — Immersive Urban Watershed & Resilience Digital Twin (synthetic demo data)",
+  "scripts": {
+    "seed": "pnpm --filter @ecostream/server run seed",
+    "dev:server": "pnpm --filter @ecostream/server run dev",
+    "dev:web": "pnpm --filter @ecostream/web run dev",
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "typecheck": "pnpm -r run typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  },
+  "packageManager": "pnpm@11.1.2",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild"
+    ]
+  }
+}
